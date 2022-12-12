@@ -16,7 +16,7 @@ require('./middleware/mongodb') //to init mongoDB
 app.use('/uploads', express.static(path.join(__dirname +'/uploads')));
 app.use(express.static(path.join(__dirname + '/dist/frontend')));
 
-const api = require('./routes/api')
+const api = require('./Routes/api')
 app.use('/api',api)
 
 
